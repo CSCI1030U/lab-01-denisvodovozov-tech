@@ -4,16 +4,16 @@ def main():
     subtotal_cost = cost_per_item * quantity
     tax = subtotal_cost*0.13
     total_cost = tax + subtotal_cost
-    print("cost per item = $" + str(cost_per_item))
-    print("quantity = $" + str(quantity))
-    print("subtotal cost = $" + str(subtotal_cost))
-    print("tax = $" + str(tax))
-    print("total cost = $" + str(total_cost))
+    print(f'cost_per_item = ${cost_per_item:0.2f}')
+    print(f'quantity = {quantity}')
+    print(f'subtotal_cost = ${subtotal_cost:0.2f}')
+    print(f'tax = ${tax:0.2f}')
+    print(f'total_cost = ${total_cost:0.2f}')
     # YOUR CODE FOR PART 1 GOES HERE  
 
 
     # YOUR CODE FOR PART 2 GOES HERE
-    print(f'cost_per_item = ${cost_per_item:0.2f}') # a sample for you to use for the other prices
+    #print(f'cost_per_item = ${cost_per_item:0.2f}') # a sample for you to use for the other prices
 
 
     # THIS IS THE CODE FOR PART 3
