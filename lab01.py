@@ -1,7 +1,14 @@
 def main():
     cost_per_item = 19.99
     quantity = 5 
-
+    subtotal_cost = cost_per_item * quantity
+    tax = subtotal_cost*0.13
+    total_cost = tax + subtotal_cost
+    print("cost per item = $" + str(cost_per_item))
+    print("quantity = $" + str(quantity))
+    print("subtotal cost = $" + str(subtotal_cost))
+    print("tax = $" + str(tax))
+    print("total cost = $" + str(total_cost))
     # YOUR CODE FOR PART 1 GOES HERE  
 
 
@@ -10,15 +17,15 @@ def main():
 
 
     # THIS IS THE CODE FOR PART 3
-    # initial_investment = 1000
-    # interest_rate = 0.035
-    # investment = initial_investment
-    # investment += investment * interest_rate
-    # investment += investment * interest_rate
-    # investment += investment * interest_rate
-    # investment += investment * interest_rate
-    # investment += investment * interest_rate
-    # print('After 5 years, your investment will be worth ' + investment + ' dollars.')
+    initial_investment = 1000
+    interest_rate = 0.035
+    investment = initial_investment
+    investment += investment * interest_rate
+    investment += investment * interest_rate
+    investment += investment * interest_rate
+    investment += investment * interest_rate
+    investment += investment * interest_rate
+    print('After 5 years, your investment will be worth ' + str(investment) + ' dollars.')
     # expected output: After 5 years, your investment will be worth 1187.6863056468749 dollars.
 
 if __name__ == "__main__":
